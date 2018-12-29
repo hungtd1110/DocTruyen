@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/txtTen"
+        android:text="ten truyen"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgItem"
+        android:layout_toRightOf="@+id/imgItem"
+        android:layout_toEndOf="@+id/imgItem" />
+
+    <TextView
+        android:id="@+id/txtTextTheLoai"
+        android:text="Thể loại : "
+        android:textSize="14dp"
+        android:textColor="#1C1C1C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgItem"
+        android:layout_below="@id/txtTen" />
+
+    <TextView
+        android:textSize="14dp"
+        android:textColor="#1C1C1C"
+        android:id="@+id/txtTheLoai"
+        android:layout_toRightOf="@id/txtTextTheLoai"
+        android:layout_below="@+id/txtTen"
+        android:text="the loai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:src="@mipmap/ic_launcher"
+        android:background="@drawable/item"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp" />
+
+    <TextView
+        android:id="@+id/txtTextChuong"
+        android:text="Số chương : "
+        android:textSize="14dp"
+        android:textColor="#1C1C1C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgItem"
+        android:layout_below="@id/txtTheLoai" />
+
+    <TextView
+        android:id="@+id/txtSoChuong"
+        android:text="so chuong"
+        android:textSize="14dp"
+        android:textColor="#1C1C1C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtTextChuong"
+        android:layout_below="@id/txtTheLoai" />
+
+    <TextView
+        android:layout_below="@+id/txtSoChuong"
+        android:layout_toRightOf="@+id/imgItem"
+        android:id="@+id/txtXemTruyen"
+        android:text="Đọc truyện"
+        android:textSize="16dp"
+        android:textColor="#F40808"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/xem_truyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

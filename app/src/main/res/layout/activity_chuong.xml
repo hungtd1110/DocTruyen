@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_truyen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.amin.project2.ChuongActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <ImageView
+            android:id="@+id/imgBackTruyen"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <!--<ImageView-->
+            <!--android:layout_marginRight="2dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:id="@+id/imgMenu"-->
+            <!--android:src="@drawable/kiem_tra"-->
+            <!--android:layout_width="25dp"-->
+            <!--android:layout_height="25dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+        <TextView
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/imgBackTruyen"
+            android:layout_marginRight="2dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#F40808"
+            android:id="@+id/txtTenChuong"
+            android:text="ten chuong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F40808"/>
+
+    <android.support.v4.view.ViewPager
+        android:background="#ffffff"
+        android:id="@+id/vpChuong"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
